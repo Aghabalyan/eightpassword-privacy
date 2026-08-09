@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Privacy Policy for 8Password, a privacy-focused password manager for Apple devices.">
+  <title>Privacy Policy — 8Password</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f6f8;
+      --surface: rgba(255, 255, 255, 0.82);
+      --surface-solid: #ffffff;
+      --text: #17191f;
+      --muted: #626774;
+      --line: rgba(23, 25, 31, 0.10);
+      --accent: #3659d9;
+      --accent-soft: rgba(54, 89, 217, 0.10);
+      --shadow: 0 24px 70px rgba(25, 31, 52, 0.09);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111318;
+        --surface: rgba(28, 31, 39, 0.82);
+        --surface-solid: #1c1f27;
+        --text: #f4f5f7;
+        --muted: #a8adba;
+        --line: rgba(255, 255, 255, 0.10);
+        --accent: #91a6ff;
+        --accent-soft: rgba(145, 166, 255, 0.12);
+        --shadow: 0 24px 70px rgba(0, 0, 0, 0.30);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 2rem;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background:
+        radial-gradient(circle at 10% 0%, var(--accent-soft), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 3px;
+    }
+
+    .page {
+      width: min(100% - 2rem, 920px);
+      margin: 0 auto;
+      padding: 4.5rem 0 3rem;
+    }
+
+    .hero { margin-bottom: 2rem; }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 3.25rem;
+      color: var(--text);
+      font-size: 0.94rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 2rem;
+      height: 2rem;
+      place-items: center;
+      border-radius: 0.68rem;
+      background: var(--text);
+      color: var(--surface-solid);
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 0;
+      font-size: clamp(2.7rem, 8vw, 5.1rem);
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+    }
+
+    .lede {
+      max-width: 670px;
+      margin: 1.6rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.55;
+    }
+
+    .date {
+      display: inline-block;
+      margin-top: 1.4rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      overflow: hidden;
+      margin: 3rem 0 2rem;
+      border: 1px solid var(--line);
+      border-radius: 1.15rem;
+      background: var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .summary-item {
+      min-height: 145px;
+      padding: 1.45rem;
+      background: var(--surface-solid);
+    }
+
+    .summary-number {
+      display: block;
+      margin-bottom: 1.4rem;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .summary-item strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+    }
+
+    .summary-item span:last-child {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .policy {
+      padding: clamp(1.5rem, 5vw, 3.5rem);
+      border: 1px solid var(--line);
+      border-radius: 1.15rem;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+    }
+
+    section + section {
+      margin-top: 2.7rem;
+      padding-top: 2.7rem;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 0.8rem;
+      font-size: clamp(1.3rem, 3vw, 1.65rem);
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    p { margin: 0.8rem 0 0; }
+
+    ul {
+      margin: 1rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    li + li { margin-top: 0.55rem; }
+
+    strong { font-weight: 700; }
+
+    .contact {
+      padding: 1.4rem;
+      border-radius: 0.9rem;
+      background: var(--accent-soft);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.8rem 0 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 680px) {
+      .page { padding-top: 2rem; }
+      .brand { margin-bottom: 2.5rem; }
+      .summary { grid-template-columns: 1fr; }
+      .summary-item { min-height: auto; }
+      .summary-number { margin-bottom: 0.75rem; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --surface-solid: #ffffff;
+        --text: #000000;
+        --muted: #444444;
+        --line: #dddddd;
+        --accent: #000000;
+        --accent-soft: #f3f3f3;
+        --shadow: none;
+      }
+
+      body { font-size: 11pt; }
+      .page { width: 100%; padding: 0; }
+      .brand { margin-bottom: 1.5rem; }
+      .summary, .policy { box-shadow: none; }
+      section { break-inside: avoid; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <a class="brand" href="#top" aria-label="8Password privacy policy home">
+        <span class="brand-mark" aria-hidden="true">8</span>
+        <span>8Password</span>
+      </a>
+      <div id="top">
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="lede">Your passwords belong to you. 8Password is designed to keep your vault on your devices, without advertising or tracking.</p>
+        <time class="date" datetime="2026-08-09">Effective August 9, 2026</time>
+      </div>
+    </header>
+
+    <aside class="summary" aria-label="Privacy summary">
+      <div class="summary-item">
+        <span class="summary-number">01</span>
+        <strong>Local by default</strong>
+        <span>Your vault is stored on your device.</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-number">02</span>
+        <strong>iCloud is optional</strong>
+        <span>Sync only when you choose to enable it.</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-number">03</span>
+        <strong>No tracking</strong>
+        <span>No ads, profiling, or cross-app tracking.</span>
+      </div>
+    </aside>
+
+    <article class="policy">
+      <section aria-labelledby="scope">
+        <h2 id="scope">1. Scope</h2>
+        <p>This Privacy Policy explains how 8Password (the “App,” “we,” “us,” or “our”) handles information when you use the 8Password password manager on an Apple device. By using the App, you acknowledge the practices described in this policy.</p>
+      </section>
+
+      <section aria-labelledby="vault-data">
+        <h2 id="vault-data">2. Your vault data</h2>
+        <p>8Password stores the information you add to your vault locally on your device. This may include account names, usernames, passwords, secure notes, and other information you choose to save.</p>
+        <p>We do not operate a developer-controlled server that receives or stores the contents of your vault. We do not sell, rent, or use your vault information for advertising, profiling, or marketing.</p>
+      </section>
+
+      <section aria-labelledby="icloud">
+        <h2 id="icloud">3. Optional iCloud sync</h2>
+        <p>If you enable iCloud sync, the App uses Apple’s iCloud service to keep your App data available across your compatible devices signed in to the same Apple Account. Your iCloud data is transmitted to and stored by Apple under your iCloud account; it is not stored on servers operated by us.</p>
+        <p>You control iCloud through your device and Apple Account settings. Apple’s handling of iCloud data is governed by Apple’s own terms and privacy policy.</p>
+      </section>
+
+      <section aria-labelledby="collection">
+        <h2 id="collection">4. Information we collect</h2>
+        <p>8Password does not require you to create an account with us. We do not collect your vault contents, browsing history, precise location, contacts, advertising identifier, or information about your activity in other companies’ apps and websites.</p>
+        <p>If you contact us for support, we receive the information you choose to provide, such as your email address, message, and any attachments. We use it only to respond to and resolve your request. Please do not include passwords or other sensitive vault information in support messages.</p>
+      </section>
+
+      <section aria-labelledby="tracking">
+        <h2 id="tracking">5. Advertising, analytics, and diagnostics</h2>
+        <p>8Password does not display third-party advertising and does not track you across apps or websites. We do not use third-party advertising or behavioral analytics tools.</p>
+        <p>Apple may make limited diagnostic or aggregated information available to developers when users choose to share analytics or crash data through their device settings. Apple controls that collection and provides it subject to its own privacy practices. We use any information made available in this way only to improve the App’s stability and performance.</p>
+      </section>
+
+      <section aria-labelledby="subscriptions">
+        <h2 id="subscriptions">6. Subscriptions and payments</h2>
+        <p>8Password may offer optional auto-renewable subscriptions. Purchases, renewals, cancellations, refunds, and payment processing are handled by Apple through the App Store. We do not receive your full payment card or bank account details.</p>
+        <p>The App may check your App Store purchase status to provide subscription features. You can manage or cancel a subscription in your Apple Account settings. Your use of the App is also subject to <a href="https://www.apple.com/legal/macapps/stdeula/" target="_blank" rel="noopener noreferrer">Apple’s Standard End User License Agreement (EULA)</a>.</p>
+      </section>
+
+      <section aria-labelledby="sharing">
+        <h2 id="sharing">7. Sharing and disclosure</h2>
+        <p>Because we do not collect or store your vault contents, we cannot sell or share them. We may disclose information you send to us for support only when reasonably necessary to:</p>
+        <ul>
+          <li>respond to your request;</li>
+          <li>comply with applicable law or a valid legal process; or</li>
+          <li>protect the rights, safety, and security of users, the public, or the App.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">8. Retention and deletion</h2>
+        <p>Local vault data remains on your device until you delete individual items, reset the App’s data, or remove the App, subject to your device backups and settings. If iCloud sync is enabled, you can manage or delete synced App data through your device and iCloud settings.</p>
+        <p>Support correspondence is retained only as long as reasonably necessary to resolve your request, maintain appropriate records, and meet legal obligations.</p>
+      </section>
+
+      <section aria-labelledby="security">
+        <h2 id="security">9. Security and your choices</h2>
+        <p>We design 8Password with privacy and security in mind. However, no device, storage system, or method of transmission is completely secure. Keep your devices, operating systems, Apple Account, and device passcodes secure and up to date.</p>
+        <p>You decide what to store in the App and whether to enable iCloud sync or share diagnostics with Apple. These choices can be changed in the App or your device settings, where available.</p>
+      </section>
+
+      <section aria-labelledby="children">
+        <h2 id="children">10. Children’s privacy</h2>
+        <p>8Password is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has sent personal information to us through a support request, please contact us so we can take appropriate action.</p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">11. Changes to this policy</h2>
+        <p>We may update this Privacy Policy when the App, our practices, or legal requirements change. We will post the updated policy on this page and revise the effective date above. Material changes may also be communicated in the App when appropriate.</p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <div class="contact">
+          <h2 id="contact">12. Contact</h2>
+          <p>Questions or privacy requests can be sent to <a href="mailto:8pass.aghabalyan@gmail.com">8pass.aghabalyan@gmail.com</a>.</p>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <span>© 2026 8Password</span>
+      <a href="https://www.apple.com/legal/macapps/stdeula/" target="_blank" rel="noopener noreferrer">Apple Standard EULA</a>
+    </footer>
+  </main>
+</body>
+</html>
