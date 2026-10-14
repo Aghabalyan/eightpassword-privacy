@@ -8,6 +8,8 @@
   <meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)">
   <meta name="description" content="Privacy Policy for 8Pass (formerly 8Password), a password manager for iPhone, iPad, Apple Watch and Mac.">
   <title>Privacy Policy — 8Pass</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
   <style>
     :root {
       color-scheme: light dark;
@@ -90,17 +92,13 @@
       text-decoration: none;
     }
 
+    /* The app icon, clipped to the same rounded square iOS draws it in. */
     .brand-mark {
-      display: grid;
-      width: 2rem;
-      height: 2rem;
-      place-items: center;
-      border-radius: 0.68rem;
-      background: var(--text);
-      color: var(--surface-solid);
-      font-size: 0.95rem;
-      font-weight: 800;
-      line-height: 1;
+      display: block;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 22.5%;
+      box-shadow: 0 0 0 1px var(--line);
     }
 
     .eyebrow {
@@ -267,7 +265,7 @@
   <main class="page">
     <header class="hero">
       <a class="brand" href="#top" aria-label="8Pass privacy policy home">
-        <span class="brand-mark" aria-hidden="true">8</span>
+        <img class="brand-mark" src="icon-128.png" width="36" height="36" alt="">
         <span>8Pass</span>
       </a>
       <div id="top">
@@ -437,7 +435,7 @@
       <section aria-labelledby="contact">
         <div class="contact">
           <h2 id="contact">19. Contact</h2>
-          <p>Questions and privacy requests can be sent to <a href="mailto:8pass.aghabalyan@gmail.com">8pass.aghabalyan@gmail.com</a>. Please never include passwords or other vault contents in an email.</p>
+          <p>Questions and privacy requests can be sent to <a href="mailto:8pass.vault@gmail.com">8pass.vault@gmail.com</a>. Please never include passwords or other vault contents in an email.</p>
         </div>
       </section>
     </article>

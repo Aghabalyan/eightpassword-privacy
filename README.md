@@ -37,7 +37,7 @@ https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
 - Review the policy against the App's actual behavior before publishing.
 - If the App's data practices change, update the relevant sections and the effective date in `index.html`.
-- The contact address currently used is `8pass.aghabalyan@gmail.com`.
+- The contact address currently used is `8pass.vault@gmail.com`.
 
 ## Preview locally
 
