@@ -1,6 +1,6 @@
-# 8Password Privacy Policy
+# 8Pass Privacy Policy
 
-A responsive, single-page Privacy Policy website for 8Password. It is ready to publish with GitHub Pages and has no build step or external dependencies.
+A responsive, single-page Privacy Policy website for 8Pass (formerly 8Password). It is ready to publish with GitHub Pages and has no build step or external dependencies.
 
 ## Publish with GitHub Pages
 
@@ -30,7 +30,7 @@ After the site is live:
 The policy links to Apple's Standard EULA at:
 
 ```text
-https://www.apple.com/legal/macapps/stdeula/
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 ```
 
 ## Customize before publishing
